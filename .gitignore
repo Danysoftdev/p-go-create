@@ -1,0 +1,19 @@
+# Go
+bin/
+*.exe
+*.log
+coverage/
+backups/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Go Modules
+vendor/
+
+# Env file
+.env
