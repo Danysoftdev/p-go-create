@@ -1,0 +1,13 @@
+/app
+*.exe
+*.log
+*.out
+vendor/
+tmp/
+.vscode/
+.idea/
+.git
+.gitignore
+.env
+coverage/
+backups/
