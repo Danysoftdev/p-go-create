@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: personas-ingress
+  namespace: p-go-create
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:

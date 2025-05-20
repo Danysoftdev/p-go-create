@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: create-replicaset
+  namespace: p-go-create
   labels:
     app: create-persona
 spec:

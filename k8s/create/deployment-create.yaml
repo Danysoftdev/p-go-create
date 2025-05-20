@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: create-deployment
+  namespace: p-go-create
   labels:
     app: create-persona
 spec:
