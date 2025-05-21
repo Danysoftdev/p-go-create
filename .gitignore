@@ -17,3 +17,7 @@ vendor/
 
 # Env file
 .env
+
+# Secret files
+k8s/create/secrets-create.yaml
+k8s/mongo/secrets-mongo.yaml
