@@ -15,7 +15,7 @@ echo "⏳ Esperando a que el Ingress Controller esté 'Running'..."
 kubectl wait --namespace ingress-nginx \
   --for=condition=ready pod \
   --selector=app.kubernetes.io/component=controller \
-  --timeout=90s
+  --timeout=180s
 
 echo "✅ Ingress listo."
 
@@ -31,7 +31,7 @@ kubectl apply -f k8s/mongo/service-mongo.yaml
 echo "⏳ Esperando a que Mongo esté listo..."
 kubectl wait --namespace=mongo-ns \
   --for=condition=available deployment/mongo-deployment \
-  --timeout=90s
+  --timeout=180s
 
 echo "✅ MongoDB desplegado y funcionando."
 

@@ -9,7 +9,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /personas(/|$)(.*)
+          - path: /crear(/|$)(.*)
             pathType: ImplementationSpecific
             backend:
               service:
