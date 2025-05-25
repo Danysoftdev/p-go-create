@@ -17,6 +17,8 @@ spec:
     spec:
       nodeSelector:
         workload: mongodb
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: mongo
           image: mongo:6.0

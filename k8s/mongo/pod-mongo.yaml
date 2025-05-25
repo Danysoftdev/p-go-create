@@ -8,9 +8,11 @@ metadata:
 spec:
   nodeSelector:
     workload: mongodb
+  imagePullSecrets:
+    - name: dockerhub-secret
   containers:
     - name: mongo
-      image: mongo:latest
+      image: mongo:6.0
       ports:
         - containerPort: 27017
       env:

@@ -3,9 +3,15 @@ kind: PersistentVolumeClaim
 metadata:
   name: mongo-pvc
   namespace: mongo-ns
+  labels:
+    app: mongo
 spec:
+  selector:
+    matchLabels:
+      app: mongo           # 👈 Coincide con el label del PV
   accessModes:
     - ReadWriteOnce
+  storageClassName: ""     # 👈 Evita que use una StorageClass dinámica
   resources:
     requests:
       storage: 1Gi
