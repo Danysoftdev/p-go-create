@@ -21,6 +21,8 @@ vendor/
 # Secret files
 k8s/create/secrets-create.yaml
 k8s/mongo/secrets-mongo.yaml
+k8s/mongo/dockerhub-secret.yaml
+k8s/create/dockerhub-secret.yaml
 
 # Kubernetes
 k8s/scripts/respaldar-mongo.sh

@@ -17,6 +17,8 @@ spec:
     spec:
       nodeSelector:
         workload: create
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: create-container
           image: danysoftdev/p-go-create:latest
