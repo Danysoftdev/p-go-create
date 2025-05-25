@@ -9,6 +9,7 @@ kubectl apply -f k8s/create/namespace-create.yaml
 
 # Secret
 kubectl apply -f k8s/create/secrets-create.yaml
+kubectl apply -f k8s/create/dockerhub-secret.yaml
 
 # Deployment
 kubectl apply -f k8s/create/deployment-create.yaml
