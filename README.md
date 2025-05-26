@@ -174,6 +174,11 @@ p-go-create/
 
 ---
 
+## Diagrama de infraestructura
+
+![Diagrama de infraestructura](./img/diagrama-infraestructura.png)
+
+
 ## 📜 Licencia
 
 Este proyecto está bajo la licencia MIT.  
